@@ -18,3 +18,14 @@ The Tipsy Traveler is an app that allows users create profiles and explore vario
 
 #### Show Page:
 ![Show Page](./public/Show.png)
+
+
+## List of Backend Endpoints
+| ENDPOINT | METHOD | PURPOSE |
+|----------|--------|---------|
+| /bar | GET | list all locations |
+| /bar/new | GET | render page to create new plant |
+| /bar/:id | DELETE | delete specified location |
+| /bar | POST | recieve new info and create location in database |
+| /bar/:id/edit | PUT | edit a location |
+| /bar/:id | GET | show page with specified location |
