@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>TipsyTraveler</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About', about_path %></li>
+      <li><%= link_to 'Login', login_path %></li>
+      <li><%= link_to 'Register', signup_path %></li>
+    </ul>
+  </nav>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
-
-  <body>
+  <div class="container">
     <%= yield %>
-  </body>
+  </div>
+
+  <!-- Your footer content here -->
+</body>
 </html>

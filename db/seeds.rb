@@ -1,7 +1,8 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Bar.create(
+  name: 'Bar at Eleven Madison Park',
+  drink_name: "Sunflower Cocktail",
+  drink_description: 'The Sunflower cocktail is inspired by the essence of a mai tai, with Ten to One Dark Rum, Batavia Arrack (a Dutch distillate made from sugar cane and red Javanese rice), apricot eau de vie, and sunflower miso orgeat. ',
+  drink_picture_url: 'https://i.imgur.com/42Awa9B.jpg',
+  city_walkability: 92,
+  city_crime_rate: 49
+)
