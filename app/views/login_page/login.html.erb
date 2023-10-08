@@ -1,2 +1,17 @@
-<h1>LoginPage#login</h1>
-<p>Find me in app/views/login_page/login.html.erb</p>
+<h1>Login</h1>
+
+<%= form_tag login_path, method: :post do %>
+  <div class="field">
+    <%= label_tag 'user[username]', 'Username' %>
+    <%= text_field :user, :username %>
+  </div>
+
+  <div class="field">
+    <%= label_tag 'user[password]', 'Password' %>
+    <%= password_field :user, :password %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag 'Login' %>
+  </div>
+<% end %>

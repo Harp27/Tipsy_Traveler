@@ -9,8 +9,12 @@ Rails.application.routes.draw do
 
   # Login Page
   get '/login', to: 'login_page#login'
+  post '/login', to: 'login_page#login'
 
   # User registration
   get '/signup', to: 'users#new'
   post '/signup', to: 'users#create'
+
+  #dashboard
+  get '/user_dashboard', to: 'user_dashboard#show', as: 'user_dashboard'
 end
