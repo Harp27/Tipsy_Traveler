@@ -1,0 +1,16 @@
+<!-- app/views/bars/show.html.erb -->
+
+<h1><%= @bar.name %></h1>
+
+<p><strong>Drink Name:</strong> <%= @bar.drink_name %></p>
+<p><strong>Drink Description:</strong> <%= @bar.drink_description %></p>
+<p><strong>City Walkability:</strong> <%= @bar.city_walkability %></p>
+<p><strong>City Crime Rate:</strong> <%= @bar.city_crime_rate %></p>
+
+<!-- Display the Drink Picture -->
+<% if @bar.drink_picture_url.present? %>
+  <p><strong>Drink Picture:</strong></p>
+  <%= image_tag @bar.drink_picture_url, alt: 'Drink Picture' %>
+<% end %>
+
+<%= link_to 'Back', bars_path %>

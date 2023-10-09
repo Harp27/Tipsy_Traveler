@@ -17,4 +17,6 @@ Rails.application.routes.draw do
 
   #dashboard
   get '/user_dashboard', to: 'user_dashboard#show', as: 'user_dashboard'
+
+  resources :bars
 end
